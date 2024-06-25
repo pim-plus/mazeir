@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link href="assets/datatables/datatables.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/financials.css">
+
+    <title>Maze IR</title>
+  </head>
+  <body class="maze-ir">
+    <!-- Header -->
+    <header id="primary_header">
+      <div class="container-xl">
+        <div class="menu-row">
+          <a href="" class="logo left" aria-label="MAZE Logo">
+            <svg version="1.1" class="maze-logo" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 73 70"
+              style="enable-background:new 0 0 73 70;" xml:space="preserve">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill-rule: evenodd;
+                  }
+                </style>
+              </defs>
+              <path id="initial_logo" data-name="initial logo" class="cls-1" d="M10.2,10.5h1.6v23.7h10.3V10.5l1.5,1.6v22.1H34V7.7L26.3,0H0v34.2h10.2L10.2,10.5L10.2,10.5z
+                       M59.2,12.1v11.6h-12l-1.6-1.6h12V12.1H43.1l-7.5,7.3l0,7.2l7.5,7.6h26.4V7.7L61.8,0H35.5v10.5h22.1L59.2,12.1z M26.2,58l7.8-7.7
+                      l0-14.6H0v10.4l23.5,0l-1.5,1.6H7.4L0,55.2V70h34V59.6H10.2l1.6-1.6L26.2,58L26.2,58z M35.5,43.2v19.3l7.6,7.5h26.4V59.6H45.6
+                      l0-11.8l1.6-1.6h12l-1.6,1.6H47.2V58h14.6l7.7-7.7V35.8H43.1L35.5,43.2z"></path>
+            </svg>
+          </a>
+          <button class="menu-open">
+            <div class="static static__nav">
+              <div class="nav-trigger">
+                <div class="nav-trigger-lines">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </button>
+          <nav class="main-menu right">
+            <button class="menu-close">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="nav-close"><polygon points="16 2.4 13.71 0.15 8.05 5.71 2.27 0 0 2.24 5.71 7.88 0 13.51 2.27 15.75 7.85 10.24 13.71 16 16 13.74 10.24 8.07 16 2.4" style="fill-rule:evenodd"></polygon></svg>
+            </button>
+            <ul>
+              <li><a href="/">overview</a></li>
+              <li>
+                <a class="drop-down" href="news-and-events.html">news & events</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#press_releases">press releases</a>
+                  </li>
+                  <li>
+                    <a href="#presentations">events & presentations</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="drop-down" href="#">governance</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="">governance overview</a>
+                  </li>
+                  <li>
+                    <a href="">leadership & board</a>
+                  </li>
+                  <li>
+                    <a href="">committee & deposition</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="active" >
+                <a class="drop-down" href="financials.html">financials</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#sec_filings">SEC filings</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="drop-down" href="#">stock info</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="">stock quote</a>
+                  </li>
+                  <li>
+                    <a href="">chart</a>
+                  </li>
+                  <li>
+                    <a href="">analyst coverage</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="drop-down" href="additional-resource.html">ir resources</a>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="">investor FAQ</a>
+                  </li>
+                  <li>
+                    <a href="">email Alerts</a>
+                  </li>
+                  <li>
+                    <a href="">investor contacts</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="container-content">
+        <div class="content">
+          <h1>Maze Therapeutics</h1>
+          <div class="details" style="text-align: center;">
+            financials
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- sec fillings -->
+     <section id="sec_filings">
+      <div class="container-content">
+        <h2>SEC filings</h2>
+        <div class="filter">
+            <div class="item">
+                <label for="nameFilter">Group</label>
+                <select id="nameFilter">
+                    <option value="">Choose From List</option>
+                </select>
+            </div>
+            <div class="item">
+                <label for="yearFilter">filing year</label>
+                <select id="yearFilter">
+                    <option value="">all</option>
+                </select>
+            </div>
+            <button id="filterButton">Filter</button>
+        </div>
+        <div class="content">
+            <table id="sec_filing_table" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>filing date</th>
+                        <th>form</th>
+                        <th>description</th>
+                        <th>filing group</th>
+                        <th>view</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>May 10, 2024</td>
+                        <td class="brand-dark">8-K</td>
+                        <td>Report on unscheduled material events or corporate event
+                        </td>
+                        <td>Quarterly Filings</td>
+                        <td>
+                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
+                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
+                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>May 11, 2024</td>
+                        <td class="brand-dark">10-Q</td>
+                        <td>Quarterly report which provides a continuing view of a company's financial position</td>
+                        <td>Quarterly Filings</td>
+                        <td>
+                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
+                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
+                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
+                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>May 10, 2024</td>
+                        <td class="brand-dark">SC 13G</td>
+                        <td>A statement of beneficial ownership of common stock by certain persons</td>
+                        <td>Other</td>
+                        <td>
+                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
+                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>May 10, 2024</td>
+                        <td class="brand-dark">8-K</td>
+                        <td>Report on unscheduled material events or corporate event
+                        </td>
+                        <td>Quarterly Filings</td>
+                        <td>
+                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
+                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
+                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>May 10, 2024</td>
+                        <td class="brand-dark">10-Q</td>
+                        <td>Quarterly report which provides a continuing view of a company's financial position</td>
+                        <td>Quarterly Filings</td>
+                        <td>
+                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
+                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
+                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
+                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>May 10, 2023</td>
+                        <td class="brand-dark">SC 13G</td>
+                        <td>A statement of beneficial ownership of common stock by certain persons</td>
+                        <td>Other</td>
+                        <td>
+                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
+                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+      </div>
+     </section>
+
+    <!-- Footer -->
+    <footer id="primary_footer">
+        <div class="container-content">
+          <div class="banner">
+            <div class="left">
+
+              <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 62" width="62" height="62"><defs><clipPath clipPathUnits="userSpaceOnUse" id="cp1"><path d="m-84-2130h960v2389h-960z"/></clipPath></defs><style></style><g clip-path="url(#cp1)"><path  d="m9.5 9.2h1.4v20.8h9v-20.8l1.3 1.4v19.4h9.2v-23.2l-6.8-6.8h-23.1v30h9zm43 1.5v10.1h-10.5l-1.4-1.4h10.5v-8.7h-12.7l-6.6 6.4v6.3l6.6 6.7h23.2v-23.3l-6.8-6.8h-23.1v9.2h19.4zm-29 40.4l6.9-6.8v-12.8h-29.9v9.1h20.6l-1.3 1.4h-12.8l-6.5 6.6v13h29.9v-9.1h-20.9l1.4-1.4zm8.1-13v16.9l6.7 6.6h23.2v-9.1h-21v-10.4l1.4-1.4h10.6l-1.5 1.4h-9.1v9h12.8l6.8-6.8v-12.7h-23.2z"/></g></svg>
+              <h3>
+                We are committed to developing breakthrough precision medicines for common diseases with large unmet medical needs.
+              </h3>
+            </div>
+            <div class="right">
+              <div class="brand">
+                <img src="assets/images/further-together.png" alt="Further Together.">
+                <h4>Further Together.</h4>
+              </div>
+              <div class="brand">
+                <img src="assets/images/impact.png" alt="Impact Obsessed.">
+                <h4>Impact Obsessed.</h4>
+              </div>
+              <div class="brand">
+                <img src="assets/images/stand-true.png" alt="Stand True.">
+                <h4>Stand True.</h4>
+              </div>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">terms of use</a></li>
+              <li><a href="#">contact us</a></li>
+            </ul>
+            <ul class="social">
+              <li><a href="#"><img src="assets/images/X_icon_2.png" alt="x account"></a></li>
+              <li><a href="#"><img src="assets/images/linkedin.png" alt="linkedin account"></a></li>
+            </ul>
+          </nav>
+        </div>
+     </footer>
+
+    <!-- Optional JavaScript -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/datatables/datatables.min.js"></script>
+    <script src="assets/js/financials.js"></script>
+
+  </body>
+</html>

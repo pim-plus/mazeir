@@ -1,0 +1,71 @@
+@import 'components/general';
+@import 'components/header';
+@import 'components/footer';
+
+#sec_filings{
+
+    #nameFilter{
+        background-position: 203px 11px;
+    }
+    .dt-length, .dt-search{
+        display: none;
+    }
+
+    .dt-info{
+        float: right;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .dt-paging{
+        float: left;
+
+        .dt-paging-button{
+            background: transparent !important;
+            padding: 0;
+            outline: 0;
+            border: none;
+            color: var(--brand-dark) !important;
+            font-weight: 400;
+            font-size: 16px;
+            &:hover{    
+                background: transparent !important;
+            }
+        }
+
+        .dt-paging-button.current, .dt-paging-button.current:hover{
+            color: var(--heading-dark) !important;
+        }
+
+        .dt-paging-button.disabled{
+            display: none;
+        }
+    }
+
+    a{
+        display: inline-block;
+    }
+
+    .dt-scroll{
+        margin-bottom: 40px;
+    }
+
+    #sec_filing_table{
+        margin-bottom: 40px;
+        th{
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        td{
+            font-size: 16px;
+            color: var(--heading-dark);
+            box-shadow: none;
+            font-weight: 400;
+        }
+
+        .brand-dark{
+            color: var(--brand-dark);
+        }
+    }
+}

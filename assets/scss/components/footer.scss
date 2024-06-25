@@ -1,0 +1,127 @@
+
+#primary_footer{
+    .banner{
+        background-color: #abb8c3;
+        padding: 80px 60px 60px;
+        display: flex;
+        gap: 80px;
+
+        .left, .right{
+            display: flex;
+            gap: 20px;
+        }
+
+        .right{
+            min-width: 290px;
+        }
+
+        h3{
+            font-size: 25px;
+            color: var(--heading-dark);
+        }
+
+        h4{
+            font-size: 18px;
+            color: var(--heading-dark);
+            font-weight: 600;   
+        }
+
+        img{
+            object-fit: contain;
+            height: 80px;
+        }
+
+        svg{
+            height: 78px;
+            width: 120px;
+            min-width: 81px;
+        }
+    }
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 0;
+
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 40px;
+        }
+
+        a{
+            font-size: 15px;
+            text-decoration: none;
+            font-weight: 600;
+            color: var(--heading-dark);
+        }
+
+        ul.social{
+            gap: 10px;
+
+            img{
+                height: 30px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1150px){    
+    #primary_footer{
+        .banner{
+            flex-wrap: wrap;
+            justify-content: end;
+            gap: 10px;
+
+            .right{
+                width: 290px;
+            }
+        }
+
+    }
+}
+
+@media(max-width: 1030px){
+ 
+}
+
+@media(max-width: 600px){
+    #primary_footer{
+        .banner{
+            flex-wrap: wrap;
+            justify-content: end;
+            gap: 10px;
+            padding: 40px 40px 40px;
+
+            .right{
+                width: 290px;
+            }
+
+            h3{
+                font-size: 20px;
+            }
+
+            h4{
+                font-size: 16px;
+            }
+
+            img{
+                height: 60px;
+            }
+
+            .brand{
+                text-align: center;
+            }
+        }
+
+        nav{
+            flex-wrap: wrap;
+            gap: 10px;
+            ul{
+                gap: 10px;
+            }
+        }
+
+    }
+}

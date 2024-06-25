@@ -1,0 +1,33 @@
+#press_releases, #presentations, #events{
+    h2{
+        margin-bottom: 30px;
+    }
+    .post{
+        padding: 20px 0;
+        border-bottom: 1px solid  var(--heading-dark);
+        &:first-child{
+            border-top: 1px solid  var(--heading-dark);
+        }
+        &:has(:only-child){
+            border-bottom: 0;
+        }
+        .date{
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+    }
+
+    a{
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+        color:  var(--heading-dark);;
+    }
+
+    .view-all{
+        color: var(--brand-dark);
+        display: inline-block;
+        margin-top: 20px;
+    }
+}

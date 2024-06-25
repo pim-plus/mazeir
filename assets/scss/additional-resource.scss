@@ -1,0 +1,87 @@
+@import 'components/general';
+@import 'components/header';
+@import 'components/footer';
+
+#investor_faq{
+    h2{
+        margin-bottom: 60px;
+    }
+    .tab{
+        border-bottom: 1px solid var(--heading-dark);
+        &:first-child{
+            border-top: 1px solid var(--heading-dark);
+        }
+        button{
+            padding: 20px 5px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            background: none;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 400;
+
+            svg{
+                width: 18px;
+            }
+        }
+
+        .content{
+            padding: 0 10px 10px;
+
+            p{
+                margin-top: 0;
+                font-size: 18px;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+#email_alerts{
+    p{
+        a{
+            color: var(--brand-dark);
+        }
+    }
+
+    .email{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        input{
+            padding: 6px 10px;
+            font-size: 18px;
+            width: 100%;
+        }
+    }
+
+    button{
+        background: transparent;
+        outline: none;
+        border: 1px solid;
+        padding: 5px 20px;
+        border-radius: 50px;
+        font-size: 16px;
+        display: inline-block;
+        margin-top: 10px;
+        font-weight: 400;
+    }
+}
+
+#investor_contacts{
+    h4{
+        font-size: 16px;
+    }
+    h5{
+        font-size: 15px;
+        margin-bottom: 40px;
+        font-weight: 400;
+    }
+
+    a{
+        color: var(--brand-dark);
+    }
+}

@@ -1,0 +1,68 @@
+
+
+@import 'components/general';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/news_and_event';
+
+
+#overview{
+    .content{
+        gap: 50px;
+
+        .right{
+            padding: 40px;
+            background-color: var(--brand-light);
+            border: 1px solid var(--heading-dark);
+            min-width: 400px;
+
+            .title, .price, .change, .description{
+                font-family: serif;
+            }
+            .title, .change{
+                font-size: 21px;
+                margin-bottom: 20px;
+            }
+            .price{
+                font-size: 52px;
+                line-height: 52px;
+                font-weight: bold;
+                color: var(--heading-dark);
+                margin-bottom: 20px;
+            }
+            .description{
+                font-size: 15px;
+                margin-bottom: 20px;
+            }
+            a{
+                width: 100%;
+                background-color: var(--heading-dark);
+                font-size: 25px;
+                font-weight: 600;
+                padding: 15px;
+                color: white;
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                line-height: 25px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1150px){
+    #overview{
+        h2{
+            margin-bottom: 0;
+        }
+        .content{
+            gap: 30px;
+            flex-wrap: wrap;
+    
+            .right{
+                min-width: 100%;
+            }
+        }
+    }
+}
+
