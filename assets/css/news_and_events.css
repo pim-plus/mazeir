@@ -110,31 +110,43 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   gap: 10px;
   margin: 60px 0;
 }
 .filter select {
   font-size: 20px;
   border: 1px solid var(--heading-dark);
-  padding: 2px 5px;
+  padding: 7px 8px;
   outline: none;
   background: url(../images/Polygon.svg);
   background-repeat: no-repeat;
-  background-position: 90px 6px;
+  background-position: 90px 11px;
   padding-right: 2.8em;
   -webkit-appearance: none;
   -moz-appearance: none;
   position: relative;
   background-size: 9px;
+  font-weight: 400;
 }
 .filter button {
   outline: none;
   border: none;
   background-color: var(--brand-dark);
-  font-size: 16px;
-  padding: 5px 20px;
+  font-size: 20px;
+  padding: 7.4px 20px;
   color: white;
   cursor: pointer;
+}
+.filter label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 #primary_header {
