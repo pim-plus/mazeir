@@ -32,11 +32,8 @@ $(document).ready(function() {
 
     // Filter button click event
     $('#filterButton').click(function() {
-        console.log('Filter button clicked');
         var selectedName = $('#nameFilter').val();
         var selectedYear = $('#yearFilter').val();
-        console.log('Selected name: ', selectedName);
-        console.log('Selected year: ', selectedYear);
 
         // Clear previous search and apply the new filter
         table.search('').columns().search('');

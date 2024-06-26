@@ -8,7 +8,6 @@ filter_btns.forEach((filter, index, array) => {
 
         posts.forEach(post => {
             const post_year = post.getAttribute('data-year');
-            console.log(post_year)
             if(Number(post_year) === Number(year)){
                 post.classList.remove("d-none")
             }else{
@@ -16,6 +15,5 @@ filter_btns.forEach((filter, index, array) => {
             }
 
         })
-        console.log(year)
     })
 })

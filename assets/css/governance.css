@@ -484,58 +484,43 @@ html {
     gap: 10px;
   }
 }
-#sec_filings #nameFilter {
-  background-position: 203px 11px;
+#gov_documents .container-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 60px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-#sec_filings .dt-length, #sec_filings .dt-search {
-  display: none;
+#gov_documents h2 {
+  margin-bottom: 60px;
 }
-#sec_filings .dt-info {
-  float: right;
-  font-size: 16px;
-  font-weight: 400;
+#gov_documents ul {
+  list-style: none;
 }
-#sec_filings .dt-paging {
-  float: left;
+#gov_documents ul li {
+  padding: 30px 0;
+  border-bottom: 1px solid var(--heading-dark);
 }
-#sec_filings .dt-paging .dt-paging-button {
-  background: transparent !important;
-  padding: 0;
-  outline: 0;
-  border: none;
-  color: var(--brand-dark) !important;
-  font-weight: 400;
-  font-size: 16px;
+#gov_documents ul li:first-child {
+  border-top: 1px solid var(--heading-dark);
 }
-#sec_filings .dt-paging .dt-paging-button:hover {
-  background: transparent !important;
+#gov_documents ul a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-size: 20px;
 }
-#sec_filings .dt-paging .dt-paging-button.current, #sec_filings .dt-paging .dt-paging-button.current:hover {
-  color: var(--heading-dark) !important;
-}
-#sec_filings .dt-paging .dt-paging-button.disabled {
-  display: none;
-}
-#sec_filings a {
-  display: inline-block;
-}
-#sec_filings .dt-scroll {
-  margin-bottom: 40px;
-}
-#sec_filings #sec_filing_table {
-  margin-bottom: 40px;
-}
-#sec_filings #sec_filing_table th {
-  font-size: 18px;
-  font-weight: 600;
-}
-#sec_filings #sec_filing_table td {
-  font-size: 16px;
-  color: var(--heading-dark);
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  font-weight: 400;
-}
-#sec_filings #sec_filing_table .brand-dark {
-  color: var(--brand-dark);
+
+@media (max-width: 900px) {
+  #gov_documents .container-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }

@@ -1,44 +1,30 @@
 @font-face {
     font-family: 'graphik';
-    src: url("../fonts/graphik-light-webfont.eot");
-    src: url("../fonts/graphik-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/graphik-light-webfont.woff") format("woff"), url("../fonts/graphik-light-webfont.ttf") format("truetype"), url("../fonts/graphik-light-webfont.svg#graphiklight") format("svg");
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'graphik';
-    src: url("../fonts/graphik-regular-webfont.eot");
-    src: url("../fonts/graphik-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/graphik-regular-webfont.woff") format("woff"), url("../fonts/graphik-regular-webfont.ttf") format("truetype"), url("../fonts/graphik-regular-webfont.svg#graphikregular") format("svg");
+    src: url("../fonts/graphik-regular-webfont.woff") format("woff");
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'graphik';
-    src: url("../fonts/graphik-medium-webfont.eot");
-    src: url("../fonts/graphik-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/graphik-medium-webfont.woff") format("woff"), url("../fonts/graphik-medium-webfont.ttf") format("truetype"), url("graphik-medium-webfont.svg#graphikmedium") format("svg");
+    src: url("../fonts/graphik-medium-webfont.woff") format("woff");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'graphik';
-    src: url("../fonts/graphik-semibold-webfont.eot");
-    src: url("../fonts/graphik-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/graphik-semibold-webfont.woff") format("woff"), url("../fonts/graphik-semibold-webfont.ttf") format("truetype"), url("../fonts/graphik-semibold-webfont.svg#graphiksemibold") format("svg");
+    src: url("../fonts/graphik-semibold-webfont.woff") format("woff");
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'graphik';
-    src: url("../fonts/graphik-bold-webfont.eot");
-    src: url("../fonts/graphik-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/graphik-bold-webfont.woff") format("woff"), url("../fonts/graphik-bold-webfont.ttf") format("truetype"), url("../fonts/graphik-bold-webfont.svg#graphikbold") format("svg");
+    src: url("../fonts/graphik-bold-webfont.woff") format("woff");
     font-weight: 800;
     font-style: normal;
 }
-
-
 
 :root{
     --heading-dark: #3c445f;

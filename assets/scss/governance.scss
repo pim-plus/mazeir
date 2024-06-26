@@ -1,0 +1,41 @@
+@import 'components/general';
+@import 'components/header';
+@import 'components/footer';
+
+#gov_documents{
+    .container-content{
+        display: flex;
+        gap: 60px;
+        justify-content: space-between;
+    }
+
+    h2{
+        margin-bottom: 60px;
+    }
+
+    ul{
+        list-style: none;
+        li{
+            padding: 30px 0;
+            border-bottom: 1px solid var(--heading-dark);
+            &:first-child{
+                border-top: 1px solid var(--heading-dark);
+            }
+        }
+        a{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            text-decoration: none;
+            font-size: 20px;
+        }
+    }
+}
+
+@media(max-width: 900px){
+    #gov_documents{
+        .container-content{
+            flex-wrap: wrap;
+        }
+    }
+}

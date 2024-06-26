@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- CSS -->
-    <link href="assets/datatables/datatables.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/financials.css">
+    <link rel="stylesheet" href="assets/css/governance.css">
 
     <title>Maze IR</title>
   </head>
@@ -61,7 +60,7 @@
                   </li>
                 </ul>
               </li>
-              <li>
+              <li class="active" >
                 <a class="drop-down" href="governance.html">governance</a>
                 <ul class="sub-menu">
                   <li>
@@ -75,7 +74,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="active" >
+              <li>
                 <a class="drop-down" href="financials.html">financials</a>
                 <ul class="sub-menu">
                   <li>
@@ -101,13 +100,13 @@
                 <a class="drop-down" href="additional-resource.html">ir resources</a>
                 <ul class="sub-menu">
                   <li>
-                    <a href="">investor FAQ</a>
+                    <a href="#email_alerts">investor FAQ</a>
                   </li>
                   <li>
-                    <a href="">email Alerts</a>
+                    <a href="#investor_contacts">email Alerts</a>
                   </li>
                   <li>
-                    <a href="">investor contacts</a>
+                    <a href="#primary_footer">investor contacts</a>
                   </li>
                 </ul>
               </li>
@@ -119,113 +118,58 @@
         <div class="content">
           <h1>Maze Therapeutics</h1>
           <div class="details" style="text-align: center;">
-            financials
+            governance
           </div>
         </div>
       </div>
     </header>
 
-    <!-- sec fillings -->
-     <section id="sec_filings">
+    <!-- governance documents and committee charters -->
+     <section id="gov_documents">
       <div class="container-content">
-        <h2>SEC filings</h2>
-        <div class="filter">
-            <div class="item">
-                <label for="nameFilter">Group</label>
-                <select id="nameFilter">
-                    <option value="">Choose From List</option>
-                </select>
+        <div class="left">
+            <h2>governance documents</h2>
+            <div class="content">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/pdficon.png" alt="pdf documents">
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/pdficon.png" alt="pdf documents">
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing </span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="item">
-                <label for="yearFilter">filing year</label>
-                <select id="yearFilter">
-                    <option value="">all</option>
-                </select>
-            </div>
-            <button id="filterButton">Filter</button>
         </div>
-        <div class="content">
-            <table id="sec_filing_table" class="display" style="width:100%">
-                <thead>
-                    <tr>
-                        <th>filing date</th>
-                        <th>form</th>
-                        <th>description</th>
-                        <th>filing group</th>
-                        <th>view</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>May 10, 2024</td>
-                        <td class="brand-dark">8-K</td>
-                        <td>Report on unscheduled material events or corporate event
-                        </td>
-                        <td>Quarterly Filings</td>
-                        <td>
-                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
-                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
-                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>May 11, 2024</td>
-                        <td class="brand-dark">10-Q</td>
-                        <td>Quarterly report which provides a continuing view of a company's financial position</td>
-                        <td>Quarterly Filings</td>
-                        <td>
-                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
-                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
-                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
-                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>May 10, 2024</td>
-                        <td class="brand-dark">SC 13G</td>
-                        <td>A statement of beneficial ownership of common stock by certain persons</td>
-                        <td>Other</td>
-                        <td>
-                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
-                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>May 10, 2024</td>
-                        <td class="brand-dark">8-K</td>
-                        <td>Report on unscheduled material events or corporate event
-                        </td>
-                        <td>Quarterly Filings</td>
-                        <td>
-                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
-                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
-                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>May 10, 2024</td>
-                        <td class="brand-dark">10-Q</td>
-                        <td>Quarterly report which provides a continuing view of a company's financial position</td>
-                        <td>Quarterly Filings</td>
-                        <td>
-                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
-                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
-                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
-                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>May 10, 2023</td>
-                        <td class="brand-dark">SC 13G</td>
-                        <td>A statement of beneficial ownership of common stock by certain persons</td>
-                        <td>Other</td>
-                        <td>
-                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
-                            <a href="#"><img src="assets/images/pdficon.png" alt="pdf file"></a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="right">
+            <h2>committee charters</h2>
+            <div class="content">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/pdficon.png" alt="pdf documents">
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/pdficon.png" alt="pdf documents">
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/pdficon.png" alt="pdf documents">
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
       </div>
      </section>
@@ -271,10 +215,7 @@
      </footer>
 
     <!-- Optional JavaScript -->
-    <script src="assets/js/jquery-3.7.1.min.js"></script>
-    <script src="assets/datatables/datatables.min.js"></script>
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/financials.js"></script>
 
   </body>
 </html>
