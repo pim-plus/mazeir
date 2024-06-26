@@ -512,6 +512,10 @@ html {
 #investor_faq .tab button svg {
   width: 18px;
 }
+#investor_faq .tab .rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
 #investor_faq .tab .content {
   padding: 0 10px 10px;
 }
