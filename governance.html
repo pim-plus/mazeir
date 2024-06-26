@@ -7,6 +7,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/governance.css">
+    <script src="assets/js/seamless.parent.min.js"></script>
 
     <title>Maze IR</title>
   </head>
@@ -174,6 +175,11 @@
       </div>
      </section>
 
+    <!-- iframe profiles -->
+     <section id="profiles">
+        <iframe id="myiframe" src="https://mazetx.com/page-iframe/" ></iframe>
+     </section>
+
     <!-- Footer -->
     <footer id="primary_footer">
         <div class="container-content">
@@ -216,6 +222,12 @@
 
     <!-- Optional JavaScript -->
     <script src="assets/js/script.js"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            // Turns the iframe into a seamless iframe.
+            window.seamless(document.getElementById('myiframe'));
+        };
+  </script>
 
   </body>
 </html>
