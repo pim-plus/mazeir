@@ -529,9 +529,6 @@ html {
 #sec_filings .dt-scroll {
   margin-bottom: 40px;
 }
-#sec_filings #sec_filing_table {
-  margin-bottom: 40px;
-}
 #sec_filings #sec_filing_table th {
   font-size: 18px;
   font-weight: 600;
@@ -545,4 +542,7 @@ html {
 }
 #sec_filings #sec_filing_table .brand-dark {
   color: var(--brand-dark);
+}
+#sec_filings #sec_filing_table tbody > tr > th, #sec_filings #sec_filing_table tbody > tr > td {
+  padding: 15px;
 }

@@ -54,7 +54,6 @@
     }
 
     #sec_filing_table{
-        margin-bottom: 40px;
         th{
             font-size: 18px;
             font-weight: 600;
@@ -69,6 +68,10 @@
 
         .brand-dark{
             color: var(--brand-dark);
+        }
+
+        tbody>tr>th, tbody>tr>td{
+            padding: 15px;
         }
     }
 }
