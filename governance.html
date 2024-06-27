@@ -7,7 +7,6 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/governance.css">
-    <script src="assets/js/seamless.parent.min.js"></script>
 
     <title>Maze IR</title>
   </head>
@@ -68,10 +67,10 @@
                     <a href="https://pim-plus.github.io/mazeir/governance.html#gov_documents">governance overview</a>
                   </li>
                   <li>
-                    <a href="https://pim-plus.github.io/mazeir/governance.html">leadership & board</a>
+                    <a href="https://pim-plus.github.io/mazeir/governance.html#leadership">leadership & board</a>
                   </li>
                   <li>
-                    <a href="https://pim-plus.github.io/mazeir/governance.html">committee & deposition</a>
+                    <a href="https://pim-plus.github.io/mazeir/governance.html#leadership">committee & deposition</a>
                   </li>
                 </ul>
               </li>
@@ -176,8 +175,17 @@
      </section>
 
     <!-- iframe profiles -->
-     <section id="profiles">
-        <iframe id="myiframe" src="https://mazetx.com/page-iframe/" ></iframe>
+     <section id="leadership">
+      <style>
+        iframe {
+          width: 100%;
+          height: 100vh;
+          border: none;
+          outline: none;
+        }
+      </style>
+        <iframe
+        src="https://mazetx.com/iframe/" ></iframe>
      </section>
 
     <!-- Footer -->
@@ -220,14 +228,15 @@
         </div>
      </footer>
 
-    <!-- Optional JavaScript -->
+    <!-- Optional JavaScript -->    
+    <script src="assets/js/iframe-resizer.parent.js"></script>
     <script src="assets/js/script.js"></script>
-    <script type="text/javascript">
-        window.onload = function() {
-            // Turns the iframe into a seamless iframe.
-            window.seamless(document.getElementById('myiframe'));
-        };
-  </script>
+    <script>
+      iframeResize({ 
+        license: 'GPLv3',
+      });
+
+    </script>
 
   </body>
 </html>

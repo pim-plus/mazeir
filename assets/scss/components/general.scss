@@ -33,6 +33,10 @@
     --brand-light: #f1a497;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
