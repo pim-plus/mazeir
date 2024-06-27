@@ -5,7 +5,7 @@
 #sec_filings{
 
     #nameFilter{
-        background-position: 203px 11px;
+        background-position: 190px 11px;
     }
     .dt-length, .dt-search{
         display: none;
@@ -44,6 +44,9 @@
 
     a{
         display: inline-block;
+        img{
+            width: 30px;
+        }
     }
 
     .dt-scroll{

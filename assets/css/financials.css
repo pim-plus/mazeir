@@ -29,6 +29,10 @@
   --brand-light: #f1a497;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -485,7 +489,7 @@ html {
   }
 }
 #sec_filings #nameFilter {
-  background-position: 203px 11px;
+  background-position: 190px 11px;
 }
 #sec_filings .dt-length, #sec_filings .dt-search {
   display: none;
@@ -518,6 +522,9 @@ html {
 }
 #sec_filings a {
   display: inline-block;
+}
+#sec_filings a img {
+  width: 30px;
 }
 #sec_filings .dt-scroll {
   margin-bottom: 40px;
