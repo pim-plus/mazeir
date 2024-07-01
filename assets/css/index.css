@@ -276,6 +276,7 @@ html {
     text-align: right;
     background-color: rgba(0, 41, 58, 0.75);
     z-index: 9999;
+    overflow-y: auto;
   }
   #primary_header .main-menu > ul {
     -webkit-box-orient: vertical;
@@ -283,7 +284,6 @@ html {
         -ms-flex-direction: column;
             flex-direction: column;
     max-width: 450px;
-    height: 100%;
     background-color: #dce3ec;
     padding: 80px 4vw 2vw;
     z-index: 2;
