@@ -290,7 +290,6 @@ html {
     z-index: 2;
     margin-left: auto;
     gap: 1em;
-    height: 100%;
   }
   #primary_header .main-menu > ul a {
     font-size: 2em;
