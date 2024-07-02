@@ -532,126 +532,13 @@ html {
 #board * {
   color: white;
 }
-#board a {
-  color: #00293a;
-  text-decoration: none;
-}
-#board a:hover {
-  color: #e96852;
-}
-#board p:last-of-type {
-  margin-bottom: 0;
-}
-#board .blue-text {
-  color: #00293a;
-}
-#board .white-text {
-  color: #fff;
-}
-#board .grace {
-  opacity: 0 !important;
-  -webkit-transition: opacity 1s;
-  transition: opacity 1s;
-}
-#board .grace.fade-in {
-  opacity: 1 !important;
+#board h2 {
+  margin: 0;
 }
 #board .container-content {
-  width: 100%;
-  margin: 0 auto;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
   padding: 1vw 10vw;
+  background-color: #5bc6cc;
 }
-#board .container-content a {
-  color: #e96852;
-}
-#board .container-content a:hover {
-  color: #00293a;
-}
-#board .container-content .people-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-top: 4rem;
-}
-#board .container-content .people-list .people-list-person {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
-  margin-bottom: 3rem;
-  position: relative;
-  padding-right: 6rem;
-}
-#board .container-content .people-list .people-list-person h3 {
-  font-size: 1.65rem;
-  margin: 0rem 0 0.5rem;
-}
-#board .container-content .people-list .people-list-person p {
-  margin-top: 0;
-  font-weight: 100;
-}
-#board .container-content .people-list .people-list-person .people-list-person-title {
-  display: block;
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-}
-#board .container-content .people-list .people-list-person .people-list-board-person-trigger.blue-text {
-  color: #00293a;
-}
-#board .container-content .people-list .people-list-person .people-list-board-person-trigger.blue-text:hover {
-  color: #fff;
-}
-@media (max-width: 768px) {
-  #board .container-content .people-list .people-list-person {
-    padding-right: 2rem;
-  }
-}
-@media (max-width: 480px) {
-  #board .container-content .people-list .people-list-person {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
-    padding-right: 0;
-  }
-}
-#board .btx_expand_arrow {
-  border: none;
-  background: none;
-  cursor: pointer;
-  z-index: 10;
-}
-#board .btx_collapse_arrow {
-  border: none;
-  background: none;
-  cursor: pointer;
-  z-index: 10;
-}
-#board .btx_content_toggler_div_btns {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 5px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-#board .btx_content_toggler_bod {
-  cursor: pointer;
-}
-@media (max-width: 480px) {
-  #board .container-content .people-list {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+#board .content {
+  min-height: 300px;
 }

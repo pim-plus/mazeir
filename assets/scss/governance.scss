@@ -45,137 +45,21 @@
 }
 
 #board {
+    
     * {
         color: white;
     }
 
-    a {
-        color: #00293a;
-        text-decoration: none;
-    }
-
-    a:hover {
-        color: #e96852;
-    }
-
-    p:last-of-type {
-        margin-bottom: 0;
-    }
-
-    .blue-text {
-        color: #00293a;
-    }
-
-    .white-text {
-        color: #fff;
-    }
-
-    .grace {
-        opacity: 0 !important;
-        transition: opacity 1s;
-    }
-
-    .grace.fade-in {
-        opacity: 1 !important;
+    h2{
+        margin: 0;
     }
 
     .container-content {
-        width: 100%;
-        margin: 0 auto;
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
         padding: 1vw 10vw;
+        background-color:#5bc6cc;
     }
 
-    .container-content a {
-        color: #e96852;
-    }
-
-    .container-content a:hover {
-        color: #00293a;
-    }
-
-    .container-content .people-list {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 4rem;
-    }
-
-    .container-content .people-list .people-list-person {
-        flex: 0 0 50%;
-        margin-bottom: 3rem;
-        position: relative;
-        padding-right: 6rem;
-    }
-
-    .container-content .people-list .people-list-person h3 {
-        font-size: 1.65rem;
-        margin: 0rem 0 .5rem;
-    }
-
-    .container-content .people-list .people-list-person p {
-        margin-top: 0;
-        font-weight: 100;
-    }
-
-    .container-content .people-list .people-list-person .people-list-person-title {
-        display: block;
-        font-size: .85rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        margin-bottom: .5rem;
-    }
-
-    .container-content .people-list .people-list-person .people-list-board-person-trigger.blue-text {
-        color: #00293a;
-    }
-
-    .container-content .people-list .people-list-person .people-list-board-person-trigger.blue-text:hover {
-        color: #fff;
-    }
-
-    @media (max-width: 768px) {
-        .container-content .people-list .people-list-person {
-            padding-right: 2rem;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .container-content .people-list .people-list-person {
-            flex: 0 0 100%;
-            padding-right: 0;
-        }
-    }
-
-    .btx_expand_arrow {
-        border: none;
-        background: none;
-        cursor: pointer;
-        z-index: 10;
-    }
-
-    .btx_collapse_arrow {
-        border: none;
-        background: none;
-        cursor: pointer;
-        z-index: 10;
-    }
-
-    .btx_content_toggler_div_btns {
-        display: flex;
-        gap: 5px;
-        justify-content: space-between;
-    }
-
-    .btx_content_toggler_bod {
-        cursor: pointer;
-    }
-
-    @media (max-width: 480px) {
-        .container-content .people-list {
-            flex-direction: row;
-            align-items: center;
-        }
+    .content{
+        min-height: 300px;
     }
 }
